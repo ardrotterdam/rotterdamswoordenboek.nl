@@ -23,7 +23,7 @@
             font-size: 2.5em;
         }
         header .prijs-info {
-            background-color: #FFD700; /* Goud/geel voor opvallende pre-order info */
+            background-color: #FFD700; /* Goud/geel voor opvallende info */
             color: #000000; /* Zwart voor maximaal contrast */
             padding: 10px 20px;
             display: inline-block;
@@ -52,7 +52,7 @@
             font-weight: bold;
         }
         .korting {
-            color: #FF4500; /* Oranje-rood voor kortingsprijs */
+            color: #FF0000; /* McDonald's rood */
             font-weight: bold;
             font-size: 1.1em;
         }
@@ -73,7 +73,7 @@
         button {
             margin-top: 20px;
             padding: 15px;
-            background-color: #FF6B35; /* Oranje voor call-to-action */
+            background-color: #FF0000; /* McDonald's rood */
             color: #FFFFFF;
             border: none;
             border-radius: 5px;
@@ -84,22 +84,37 @@
             transition: all 0.3s ease;
         }
         button:hover {
-            background-color: #E55100;
+            background-color: #CC0000;
             transform: scale(1.02);
         }
         .pre-order-badge {
             display: inline-block;
-            background-color: #FF4500;
+            background-color: #FF0000; /* McDonald's rood */
             color: white;
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 0.9em;
             margin-left: 10px;
         }
+        .beperkt-badge {
+            display: inline-block;
+            background-color: #FF0000; /* McDonald's rood */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            margin: 10px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
         footer {
             text-align: center;
             padding: 15px 10px;
-            background-color: #008000;
+            background-color: #008000; /* Groen */
             color: #FFFFFF;
             position: fixed;
             width: 100%;
@@ -139,48 +154,48 @@
     <header>
         <h1>Rotterdams Woordenboek - Ja Toch, Niettan?</h1>
         <p>Wil je prate as een echte Rotterdammer? Niet lullen maar poetsen, pak dit boekie!</p>
-        <div class="prijs-info">🔥 PRE-ORDER NU: €14,95 (Normaal €19,95) - BESPAAR €5! 🔥</div>
+        <div class="prijs-info">🔥 BEPERKTE OPLAGE - Wees d'r as de kippe bij! 🔥</div>
     </header>
     
     <section id="beschrijving">
-        <h2>Wat is dit nou weer?</h2>
-        <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek, gemaakt door Erik van Loon, is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen. Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol!</p>
-        <p><span class="prijs-highlight">Nu te pre-orderen voor maar €14,95</span> <span class="korting">(normale prijs €19,95)</span>! Levering binnen 6 weken. Hard voor weinig, nooit chagrijnig. Koop 'm nou, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
+        <h2>Wat is dit nou weer voor gezeik?</h2>
+        <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Of wat dacht je van: "Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen."</p>
+        <p>Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol! Van "Hé makker, kom es met je tengels van m'n fiets af" tot "Ik heb schijt an Joost, maar niet an z'n cente" - alles staat d'r in!</p>
+        
+        <div class="beperkt-badge">⚠️ LET OP: BEPERKTE OPLAGE - Op = Op, jonguh!</div>
+        
+        <p><span class="prijs-highlight">Meld je nou aan!</span> <span class="korting">Als 't boekie uitkomt, krijg je as eerste een mailtje. Dan ken je 'm meteen kope voordat die uitverkocht is!</span> Hard voor weinig, nooit chagrijnig. Schrijf je in, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
     </section>
     
-    <section id="koop">
-        <h2>Wil je 'm hebbe? Vul dit formuliertje in! <span class="pre-order-badge">PRE-ORDER</span></h2>
-        <p>Wees d'r as de kippe bij! <span class="prijs-highlight">Limiteerde eerste druk - pre-order nou voor €14,95</span> <span class="korting">(straks €19,95)</span>. Over 6 weke ligt ie op je deurmat. We houde je op de hoogte!</p>
+    <section id="aanmelden">
+        <h2>Wil je 'm hebbe? Laat 't wete! <span class="pre-order-badge">GRATIS AANMELDE</span></h2>
+        <p>Niks betale nou, gewoon je naam en mailadres achterlaate. Zodra 't boekie te koop is, stuur ik je een berichtje. Dan ken je as eerste beslisse of je 'm wil hebbe. <span class="prijs-highlight">Wees d'r snel bij</span> - <span class="korting">als de eerste druk op is, is ie op!</span></p>
+        
+        <p style="text-align: center; font-weight: bold; color: #008000;">Muil houe en aanmelde - kost je helemaal niks!</p>
+        
         <form action="#" method="post">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="naam" required>
+            <label for="naam">Naam (hoe hiet je dan?):</label>
+            <input type="text" id="naam" name="naam" placeholder="Jan de Rotterdammer" required>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email (waar ken ik je bereike?):</label>
+            <input type="email" id="email" name="email" placeholder="jantje@rotterdam.nl" required>
             
-            <label for="adres">Adres (voor verzending):</label>
-            <input type="text" id="adres" name="adres" required>
-            
-            <label for="bericht">Bericht (waarom wil je 'm?):</label>
-            <textarea id="bericht" name="bericht" rows="4"></textarea>
-            
-            <button type="submit">🛒 PRE-ORDER NU VOOR €14,95 - Muil houe en kope!</button>
+            <button type="submit">✉️ JA, IK WIL D'R AS EERSTE BIJ ZIJN - Aanmelde!</button>
         </form>
         
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f8f0; border-radius: 10px;">
-            <h3 style="color: #008000;">Geen zin om te wachte? Betaal direct!</h3>
-            <p style="font-size: 1.1em;">Klik op de knop hieronder voor directe betaling:</p>
-            <a href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=VERVANG_MET_JOUW_BETAALLINK" 
-               style="display: inline-block; background-color: #FF6B35; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em; margin: 10px;">
-                💳 BETAAL DIRECT €14,95
-            </a>
-            <p style="color: #666; font-size: 0.9em;">Of gebruik Tikkie/PayPal/iDEAL - stuur een berichtje voor de link!</p>
-            <p style="color: #008000; font-weight: bold;">Na betaling: stuur je adresgegevens naar info@rotterdamshop.com</p>
+            <h3 style="color: #008000;">Waarom zou je wachte tot 't te laat is?</h3>
+            <p style="font-size: 1.1em;">✅ Gratis aanmelde - geen gezeik</p>
+            <p style="font-size: 1.1em;">✅ Je krijgt as eerste bericht - voor de rest!</p>
+            <p style="font-size: 1.1em;">✅ Beperkte oplage - op = echt op!</p>
+            <p style="font-size: 1.1em;">✅ Geen verplichtinge - je beslist later of je 'm koopt</p>
+            <p class="korting" style="font-size: 1.2em; margin-top: 20px;">Niet zeike, gewoon doen! Anders heb je straks de poppe an 't danse!</p>
         </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Rotterdams Woordenboek door Erik van Loon. Alle rechten voorbehoude.</p> Tieft de tempel uit of pleurt op!
+        <p>&copy; 2025 Rotterdams Woordenboek - Alle rechten voorbehoude, ja toch!</p>
+        <p>Tieft de tempel uit of pleurt op! Maar eerst even aanmelde hè?</p>
     </footer>
 </body>
 </html>
