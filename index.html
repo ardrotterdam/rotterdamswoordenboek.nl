@@ -22,6 +22,17 @@
             margin: 0;
             font-size: 2.5em;
         }
+        header .prijs-info {
+            background-color: #FFD700; /* Goud/geel voor opvallende pre-order info */
+            color: #000000; /* Zwart voor maximaal contrast */
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.3em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -32,6 +43,18 @@
         }
         h2 {
             color: #008000;
+        }
+        .prijs-highlight {
+            background-color: #FFEB3B; /* Licht geel voor highlight */
+            color: #000000; /* Zwart voor contrast */
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .korting {
+            color: #FF4500; /* Oranje-rood voor kortingsprijs */
+            font-weight: bold;
+            font-size: 1.1em;
         }
         form {
             display: flex;
@@ -49,15 +72,29 @@
         }
         button {
             margin-top: 20px;
-            padding: 10px;
-            background-color: #008000;
+            padding: 15px;
+            background-color: #FF6B35; /* Oranje voor call-to-action */
             color: #FFFFFF;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
         }
         button:hover {
-            background-color: #006400; /* Donkerder groen */
+            background-color: #E55100;
+            transform: scale(1.02);
+        }
+        .pre-order-badge {
+            display: inline-block;
+            background-color: #FF4500;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
         }
         footer {
             text-align: center;
@@ -74,17 +111,18 @@
     <header>
         <h1>Rotterdams Woordenboek - Ja Toch, Niettan?</h1>
         <p>Wil je prate as een echte Rotterdammer? Niet lullen maar poetsen, pak dit boekie!</p>
+        <div class="prijs-info">🔥 PRE-ORDER NU: €14,95 (Normaal €19,95) - BESPAAR €5! 🔥</div>
     </header>
     
     <section id="beschrijving">
         <h2>Wat is dit nou weer?</h2>
-        <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen. Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol!</p>
-        <p>Hard voor weinig, nooit chagrijnig. Koop 'm nou, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
+        <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek, gemaakt door Erik van Loon, is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen. Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol!</p>
+        <p><span class="prijs-highlight">Nu te pre-orderen voor maar €14,95</span> <span class="korting">(normale prijs €19,95)</span>! Levering binnen 6 weken. Hard voor weinig, nooit chagrijnig. Koop 'm nou, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
     </section>
     
     <section id="koop">
-        <h2>Wil je 'm hebbe? Vul dit formuliertje in!</h2>
-        <p>Astie 'm wil, hauwd je kanis en vul in. We contacte je zo snel as een bakkie pleur.</p>
+        <h2>Wil je 'm hebbe? Vul dit formuliertje in! <span class="pre-order-badge">PRE-ORDER</span></h2>
+        <p>Astie 'm wil, hauwd je kanis en vul in. <span class="prijs-highlight">Pre-order nu voor €14,95</span> <span class="korting">(normaal €19,95)</span> en ontvang 'm over 6 weken. We contacte je zo snel as een bakkie pleur!</p>
         <form action="#" method="post">
             <label for="naam">Naam:</label>
             <input type="text" id="naam" name="naam" required>
@@ -92,15 +130,18 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
+            <label for="adres">Adres (voor verzending):</label>
+            <input type="text" id="adres" name="adres" required>
+            
             <label for="bericht">Bericht (waarom wil je 'm?):</label>
             <textarea id="bericht" name="bericht" rows="4"></textarea>
             
-            <button type="submit">Verstuur, niet druppele!</button>
+            <button type="submit">🛒 PRE-ORDER NU VOOR €14,95 - Niet druppele!</button>
         </form>
     </section>
     
     <footer>
-        <p>&copy; 2025 Rotterdams Woordenboek. Alle rechten voorbehoude. Tieft de tempel uit of pleurt op!</p>
+        <p>&copy; 2025 Rotterdams Woordenboek door Erik van Loon. Alle rechten voorbehoude. Tieft de tempel uit of pleurt op!</p>
     </footer>
 </body>
 </html>
