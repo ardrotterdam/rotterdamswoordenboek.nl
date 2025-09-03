@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotterdams Woordenboek - Niet Lullen Maar Poetsen!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Wit */
+            color: #008000; /* Groen */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008000; /* Groen */
+            color: #FFFFFF; /* Wit */
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 2px solid #008000;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #008000;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #008000;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #008000;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #008000;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006400; /* Donkerder groen */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #008000;
+            color: #FFFFFF;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rotterdams Woordenboek - Ja Toch, Niettan?</h1>
+        <p>Wil je prate as een echte Rotterdammer? Niet lullen maar poetsen, pak dit boekie!</p>
+    </header>
+    
+    <section id="beschrijving">
+        <h2>Wat is dit nou weer?</h2>
+        <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen. Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol!</p>
+        <p>Hard voor weinig, nooit chagrijnig. Koop 'm nou, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
+    </section>
+    
+    <section id="koop">
+        <h2>Wil je 'm hebbe? Vul dit formuliertje in!</h2>
+        <p>Astie 'm wil, hauwd je kanis en vul in. We contacte je zo snel as een bakkie pleur.</p>
+        <form action="#" method="post">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="bericht">Bericht (waarom wil je 'm?):</label>
+            <textarea id="bericht" name="bericht" rows="4"></textarea>
+            
+            <button type="submit">Verstuur, niet druppele!</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Rotterdams Woordenboek. Alle rechten voorbehoude. Tieft de tempel uit of pleurt op!</p>
+    </footer>
+</body>
+</html>
