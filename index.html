@@ -98,12 +98,40 @@
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px 10px;
             background-color: #008000;
             color: #FFFFFF;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header .prijs-info {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            footer {
+                font-size: 0.75em;
+                padding: 10px 5px;
+            }
+            button {
+                font-size: 0.95em;
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -136,7 +164,7 @@
             <label for="bericht">Bericht (waarom wil je 'm?):</label>
             <textarea id="bericht" name="bericht" rows="4"></textarea>
             
-            <button type="submit">🛒 PRE-ORDER NU VOOR €14,95 - Hou je bakkes en bestel!</button>
+            <button type="submit">🛒 PRE-ORDER NU VOOR €14,95 - Niet druppele!</button>
         </form>
         
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f8f0; border-radius: 10px;">
