@@ -33,6 +33,23 @@
             font-size: 1.3em;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+        .gezegdes-link {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #008000;
+            padding: 12px 25px;
+            margin: 15px 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .gezegdes-link:hover {
+            background-color: #FFD700;
+            color: #000000;
+            transform: scale(1.05);
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -55,6 +72,16 @@
             color: #FF0000;
             font-weight: bold;
             font-size: 1.1em;
+        }
+        .rotterdamse-spreuk {
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,107,62,0.1));
+            border-left: 4px solid #FFD700;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #008000;
+            border-radius: 5px;
         }
         form {
             display: flex;
@@ -125,6 +152,13 @@
             margin: 0;
             line-height: 1.4;
         }
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8em;
@@ -145,6 +179,11 @@
                 font-size: 0.95em;
                 padding: 12px;
             }
+            .gezegdes-link {
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -153,21 +192,37 @@
         <h1>Rotterdams Woordenboek - Ja Toch, Niettan?</h1>
         <p>Wil je prate as een echte Rotterdammer? Niet lullen maar poetsen, pak dit boekie!</p>
         <div class="prijs-info">🔥 BEPERKTE OPLAGE - Wees d'r as de kippe bij! 🔥</div>
+        <a href="rotterdamse-gezegdes.html" class="gezegdes-link">📖 Bekijk GRATIS Top 20 Gezegdes!</a>
         <!-- UPDATE CHECK - VERSIE 3.0 WEB3FORMS - 4 SEPTEMBER 2025 -->
     </header>
     
     <section id="beschrijving">
         <h2>Wat is dit nou weer voor gezeik?</h2>
+        
+        <div class="rotterdamse-spreuk">
+            💬 "As me tante een snor had, was 't me ome" - Typisch Rotterdams!
+        </div>
+        
         <p>Yo, Rotterdammer of niet, dit Rotterdams Woordenboek is gers! 't Zit vol met typische Rotterdamse zinnen en woorden. Denk an: "Ben je van de pot gepleurd?" of "Je ken een hoop stront paars verve, maar 't blijf een hoop stront." Of wat dacht je van: "Hij heb een goed hart, maar ze hadde het gekookt op z'n rug motte hangen."</p>
+        
         <p>Met dit boek leer je al die bloedverziekende leuke uitdrukkingen. De reuzel loop m'n reet uit van de lol! Van "Hé makker, kom es met je tengels van m'n fiets af" tot "Ik heb schijt an Joost, maar niet an z'n cente" - alles staat d'r in!</p>
         
         <div class="beperkt-badge">⚠️ LET OP: BEPERKTE OPLAGE - Op = Op, jonguh!</div>
+        
+        <div class="rotterdamse-spreuk">
+            🔥 "Grote muil, dikke lip!" - Als je 't nie aanmeld, heb je pech!
+        </div>
         
         <p><span class="prijs-highlight">Meld je nou aan!</span> <span class="korting">Als 't boekie uitkomt, krijg je as eerste een mailtje. Dan ken je 'm meteen kope voordat die uitverkocht is!</span> Hard voor weinig, nooit chagrijnig. Schrijf je in, voor 't te laat is. Grote muil, dikke lip als je 't niet doet!</p>
     </section>
     
     <section id="aanmelden">
         <h2>Wil je 'm hebbe? Laat 't wete! <span class="pre-order-badge">GRATIS AANMELDE</span></h2>
+        
+        <div class="rotterdamse-spreuk">
+            💪 "Niet lullen maar poetsen!" - Of in dit geval: niet zeike maar aanmelde!
+        </div>
+        
         <p>Niks betale nou, gewoon je naam en mailadres achterlaate. Zodra 't boekie te koop is, stuur ik je een berichtje. Dan ken je as eerste beslisse of je 'm wil hebbe. <span class="prijs-highlight">Wees d'r snel bij</span> - <span class="korting">als de eerste druk op is, is ie op!</span></p>
         
         <p style="text-align: center; font-weight: bold; color: #008000;">Muil houe en aanmelde - kost je helemaal niks!</p>
@@ -197,16 +252,30 @@
         
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f8f0; border-radius: 10px;">
             <h3 style="color: #008000;">Waarom zou je wachte tot 't te laat is?</h3>
+            
+            <div class="rotterdamse-spreuk" style="background: none; border: none; margin: 15px 0;">
+                "Je moe nie hoger pisse dan dat je lul hang" - Maar dit boek ken je wel aan!
+            </div>
+            
             <p style="font-size: 1.1em;">✅ Gratis aanmelde - geen gezeik</p>
             <p style="font-size: 1.1em;">✅ Je krijgt as eerste bericht - voor de rest!</p>
             <p style="font-size: 1.1em;">✅ Beperkte oplage - op = echt op!</p>
             <p style="font-size: 1.1em;">✅ Geen verplichtinge - je beslist later of je 'm koopt</p>
+            
+            <div class="rotterdamse-spreuk" style="background: none; border: none; margin: 20px 0;">
+                "De reuzel loop m'n reet uit" - Van enthousiasme over dit boek!
+            </div>
+            
             <p class="korting" style="font-size: 1.2em; margin-top: 20px;">Niet zeike, gewoon doen! Anders heb je straks de poppe an 't danse!</p>
         </div>
     </section>
     
     <footer>
         <p>&copy; 2025 Rotterdams Woordenboek - Alle rechten voorbehoude, ja toch!</p>
+        <p>
+            <a href="rotterdamse-gezegdes.html">Top 20 Gezegdes</a> | 
+            <a href="bedankt.html">Test Bedankpagina</a>
+        </p>
         <p>Tieft de tempel uit of pleurt op! Maar eerst even aanmelde hè?</p>
     </footer>
 </body>
