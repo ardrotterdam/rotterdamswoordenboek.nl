@@ -39,7 +39,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
@@ -111,11 +111,53 @@
         .rotterdam-quotes h3 {
             color: #FFD700;
             margin-bottom: 15px;
+            font-size: 1.4em;
         }
 
         .rotterdam-quotes p {
             font-style: italic;
             margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .teaser-section {
+            background: rgba(238,39,34,0.15);
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .teaser-section h3 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .teaser-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .teaser-item {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid #FFD700;
+        }
+
+        .teaser-item .dutch {
+            color: #aaa;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .teaser-item .rotterdams {
+            color: #FFD700;
+            font-weight: bold;
             font-size: 1.1em;
         }
 
@@ -180,6 +222,7 @@
             .success-icon { font-size: 4em; }
             .action-buttons { flex-direction: column; }
             .btn { width: 100%; }
+            .teaser-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -194,23 +237,68 @@
         <h1>MOOI MAN!</h1>
         
         <div class="message-box">
-            <p class="highlight">Je staat d'r op, ouwe!</p>
+            <p class="highlight">Je staat d'r op, ouwe pikkebaas!</p>
             <p>We hebbe je aanmelding binne. Zodra 't <strong>Rotterdams Woordenboek</strong> te koop is, krijg je van ons een mailtje.</p>
             <p>Dan ken je as <span class="highlight">eerste</span> beslisse of je 'm wil hebbe!</p>
         </div>
 
         <div class="rotterdam-quotes">
-            <h3>Ken je deze Rotterdamse wijshede al?</h3>
-            <p>"<span class="highlight">Die denkt dat ie de wijsheid in pacht heb, maar ze hadde 'm beter op z'n rug gebonde</span>"</p>
-            <p>"<span class="highlight">Je ken de pot op met je cente, maar nie met je ponum</span>"</p>
-            <p>"<span class="highlight">Al draag een aap een goude ring, 't is en blijf een lelijk ding</span>"</p>
-            <p>"<span class="highlight">Schijt an de lamp, dan heb je een bruin licht</span>"</p>
-            <p>"<span class="highlight">Die heb de balle van de koningin gezien en denkt nou dat ie aan 't hof is gewees</span>"</p>
-            <p>"<span class="highlight">Je moe nie hoger pisse dan dat je lul hang</span>"</p>
-            <p>"<span class="highlight">Beter hard geblazen dan met je bek vol tande</span>"</p>
-            <p>"<span class="highlight">Die lult zoveel, die krijg nog es een boete voor geluidsoverlast</span>"</p>
-            <p>"<span class="highlight">As me tante een snor had, was 't me ome</span>"</p>
-            <p>"<span class="highlight">Die is zo dom, die denk dat een garnalenkroket van de Noordzee komt zwemme</span>"</p>
+            <h3>Echte Rotterdamse wijshede uit de Maasstad:</h3>
+            <p>"<span class="highlight">Heb je goed gegeten? Dan ken je lorre poepe!</span>"</p>
+            <p>"<span class="highlight">Hij is nog te lui om Onze Lieve Heer gedag te zeggen</span>"</p>
+            <p>"<span class="highlight">Van een mooi bord kejje nie ete</span>"</p>
+            <p>"<span class="highlight">Zo gierig dat-ie zelluf tegen de pui staat te pisse om een hond uit te sparen</span>"</p>
+            <p>"<span class="highlight">Krijg wat Piet Hein had, die konden ze uit z'n bed scheppe!</span>"</p>
+            <p>"<span class="highlight">Wie een worst koopt of een weduwe trouwt, weet niet wat er in is gedouwd</span>"</p>
+            <p>"<span class="highlight">As je boven ben stuur mij een brieffie</span>" (neus peuteren)</p>
+            <p>"<span class="highlight">De musse pleuren dood van 't dak</span>" (het is warm)</p>
+            <p>"<span class="highlight">Mot je een dreun of mot je een zwieper?</span>"</p>
+            <p>"<span class="highlight">Kijkuh als een aap op een roestig klokkie</span>"</p>
+        </div>
+
+        <div class="teaser-section">
+            <h3>🎁 GRATIS VOORPROEFJE - Rotterdamse Woorden 🎁</h3>
+            <p style="color: white; margin-bottom: 20px;">Hier hebbe een paar woorde uit het boek, helemaal voor niks!</p>
+            
+            <div class="teaser-grid">
+                <div class="teaser-item">
+                    <div class="dutch">Een kopje koffie</div>
+                    <div class="rotterdams">Een bakkie pleur</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Politiebureau</div>
+                    <div class="rotterdams">Hotel Emma</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Coolsingel</div>
+                    <div class="rotterdams">Koelsingel</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Frikandel speciaal</div>
+                    <div class="rotterdams">Open ruggetje</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Toiletpapier</div>
+                    <div class="rotterdams">Pleepepier</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Dakje</div>
+                    <div class="rotterdams">Daakje</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Marconiplein</div>
+                    <div class="rotterdams">Makronieplein</div>
+                </div>
+                <div class="teaser-item">
+                    <div class="dutch">Vuilnisbakkenras (hond)</div>
+                    <div class="rotterdams">Roteb-terriër</div>
+                </div>
+            </div>
+            
+            <p style="color: #FFD700; margin-top: 25px; font-size: 1.2em;">
+                <strong>Dit is nog maar 't topje van de ijsberg!</strong><br>
+                366 gezegdes + 670 woorden wachten op je!
+            </p>
         </div>
 
         <div class="message-box">
@@ -221,12 +309,14 @@
 
         <div class="action-buttons">
             <a href="index.html" class="btn">Terug naar de site</a>
+            <a href="rotterdamse-gezegdes.html" class="btn btn-secondary">Bekijk Top 20 Gezegdes</a>
             <a href="mailto:info@rotterdamshop.com?subject=Vraag over Rotterdams Woordenboek" class="btn btn-secondary">Vraag? Mail ons!</a>
         </div>
 
         <div class="footer-note">
             <p><strong>Nie vergete hè:</strong></p>
             <p>"Een Rotterdammer die nie kan schelde, is als een molen zonder wind!"</p>
+            <p>"Ze kenne beter over je lulle, als van je vreten!"</p>
             <p style="margin-top: 20px;">Tot snel, mattie! 👊</p>
         </div>
     </div>
