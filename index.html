@@ -7,14 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #FFFFFF; /* Wit */
-            color: #008000; /* Groen */
+            background-color: #FFFFFF;
+            color: #008000;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #008000; /* Groen */
-            color: #FFFFFF; /* Wit */
+            background-color: #008000;
+            color: #FFFFFF;
             text-align: center;
             padding: 50px 20px;
         }
@@ -23,8 +23,8 @@
             font-size: 2.5em;
         }
         header .prijs-info {
-            background-color: #FFD700; /* Goud/geel voor opvallende info */
-            color: #000000; /* Zwart voor maximaal contrast */
+            background-color: #FFD700;
+            color: #000000;
             padding: 10px 20px;
             display: inline-block;
             border-radius: 5px;
@@ -45,14 +45,14 @@
             color: #008000;
         }
         .prijs-highlight {
-            background-color: #FFEB3B; /* Licht geel voor highlight */
-            color: #000000; /* Zwart voor contrast */
+            background-color: #FFEB3B;
+            color: #000000;
             padding: 3px 8px;
             border-radius: 3px;
             font-weight: bold;
         }
         .korting {
-            color: #FF0000; /* McDonald's rood */
+            color: #FF0000;
             font-weight: bold;
             font-size: 1.1em;
         }
@@ -64,7 +64,7 @@
             margin-top: 10px;
             color: #008000;
         }
-        input, textarea {
+        input {
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #008000;
@@ -73,7 +73,7 @@
         button {
             margin-top: 20px;
             padding: 15px;
-            background-color: #FF0000; /* McDonald's rood */
+            background-color: #FF0000;
             color: #FFFFFF;
             border: none;
             border-radius: 5px;
@@ -89,7 +89,7 @@
         }
         .pre-order-badge {
             display: inline-block;
-            background-color: #FF0000; /* McDonald's rood */
+            background-color: #FF0000;
             color: white;
             padding: 5px 10px;
             border-radius: 20px;
@@ -98,7 +98,7 @@
         }
         .beperkt-badge {
             display: inline-block;
-            background-color: #FF0000; /* McDonald's rood */
+            background-color: #FF0000;
             color: white;
             padding: 8px 15px;
             border-radius: 5px;
@@ -114,7 +114,7 @@
         footer {
             text-align: center;
             padding: 15px 10px;
-            background-color: #008000; /* Groen */
+            background-color: #008000;
             color: #FFFFFF;
             position: fixed;
             width: 100%;
@@ -125,8 +125,6 @@
             margin: 0;
             line-height: 1.4;
         }
-        
-        /* Mobile responsive */
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8em;
@@ -173,7 +171,8 @@
         
         <p style="text-align: center; font-weight: bold; color: #008000;">Muil houe en aanmelde - kost je helemaal niks!</p>
         
-        <form action="#" method="post">
+        <!-- WERKEND FORMSPREE FORMULIER -->
+        <form action="https://formspree.io/f/xand1jvd" method="POST">
             <label for="naam">Naam (hoe hiet je dan?):</label>
             <input type="text" id="naam" name="naam" placeholder="Jan de Rotterdammer" required>
             
@@ -182,6 +181,10 @@
             
             <button type="submit">✉️ JA, IK WIL D'R AS EERSTE BIJ ZIJN - Aanmelde!</button>
         </form>
+        
+        <p style="text-align: center; margin-top: 15px; color: #666; font-size: 0.9em;">
+            Lukt 't niet? Mail gewoon naar: info@rotterdamshop.com
+        </p>
         
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f8f0; border-radius: 10px;">
             <h3 style="color: #008000;">Waarom zou je wachte tot 't te laat is?</h3>
