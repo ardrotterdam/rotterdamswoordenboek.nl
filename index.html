@@ -174,11 +174,13 @@
         
         <!-- WERKEND WEB3FORMS FORMULIER MET REDIRECT -->
         <form action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms configuratie met jouw access key -->
-            <input type="hidden" name="access_key" value="01ec8ec2-c58e-42fd-9f54-7d308">
+            <!-- Web3Forms configuratie met complete access key -->
+            <input type="hidden" name="access_key" value="01ec8ec2-c58e-42fd-9f54-7d3085e41a9c">
             <input type="hidden" name="redirect" value="https://ardrotterdam.github.io/rotterdamswoordenboek.nl/bedankt.html">
             <input type="hidden" name="subject" value="Nieuwe aanmelding Rotterdams Woordenboek!">
             <input type="hidden" name="from_name" value="Rotterdams Woordenboek Website">
+            <!-- Spam bescherming -->
+            <input type="checkbox" name="botcheck" style="display: none;">
             
             <label for="naam">Naam (hoe hiet je dan?):</label>
             <input type="text" id="naam" name="naam" placeholder="Jan de Rotterdammer" required>
