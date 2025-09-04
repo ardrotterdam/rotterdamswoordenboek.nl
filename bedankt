@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooi Man! - Rotterdams Woordenboek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial Black', Arial, sans-serif;
+            background: linear-gradient(135deg, #006B3E 0%, #004d2c 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            padding: 20px;
+        }
+
+        .celebration-banner {
+            background: #FFD700;
+            color: #006B3E;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: -20px -20px 30px -20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-icon {
+            font-size: 5em;
+            margin: 20px 0;
+            animation: checkmark 0.8s ease-out;
+        }
+
+        @keyframes checkmark {
+            0% { transform: scale(0) rotate(45deg); }
+            50% { transform: scale(1.3) rotate(-10deg); }
+            100% { transform: scale(1) rotate(0); }
+        }
+
+        .message-box {
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255,215,0,0.3);
+        }
+
+        .message-box p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .rotterdam-quotes {
+            background: rgba(0,0,0,0.2);
+            border-left: 5px solid #FFD700;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .rotterdam-quotes h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .rotterdam-quotes p {
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #EE2722;
+            color: white;
+            padding: 18px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(238,39,34,0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(238,39,34,0.5);
+            background: #cc1f1a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 3px solid #FFD700;
+            color: #FFD700;
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover {
+            background: #FFD700;
+            color: #006B3E;
+            box-shadow: 0 8px 25px rgba(255,215,0,0.5);
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255,255,255,0.2);
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .container { padding: 25px; }
+            .success-icon { font-size: 4em; }
+            .action-buttons { flex-direction: column; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="celebration-banner">
+        🎉 GERS! JE BEN D'R BIJ! 🎉
+    </div>
+
+    <div class="container">
+        <div class="success-icon">✅</div>
+        
+        <h1>MOOI MAN!</h1>
+        
+        <div class="message-box">
+            <p class="highlight">Je staat d'r op, ouwe!</p>
+            <p>We hebbe je aanmelding binne. Zodra 't <strong>Rotterdams Woordenboek</strong> te koop is, krijg je van ons een mailtje.</p>
+            <p>Dan ken je as <span class="highlight">eerste</span> beslisse of je 'm wil hebbe!</p>
+        </div>
+
+        <div class="rotterdam-quotes">
+            <h3>Ken je deze Rotterdamse wijshede al?</h3>
+            <p>"<span class="highlight">Die denkt dat ie de wijsheid in pacht heb, maar ze hadde 'm beter op z'n rug gebonde</span>"</p>
+            <p>"<span class="highlight">Je ken de pot op met je cente, maar nie met je ponum</span>"</p>
+            <p>"<span class="highlight">Al draag een aap een goude ring, 't is en blijf een lelijk ding</span>"</p>
+            <p>"<span class="highlight">Schijt an de lamp, dan heb je een bruin licht</span>"</p>
+            <p>"<span class="highlight">Die heb de balle van de koningin gezien en denkt nou dat ie aan 't hof is gewees</span>"</p>
+            <p>"<span class="highlight">Je moe nie hoger pisse dan dat je lul hang</span>"</p>
+            <p>"<span class="highlight">Beter hard geblazen dan met je bek vol tande</span>"</p>
+            <p>"<span class="highlight">Die lult zoveel, die krijg nog es een boete voor geluidsoverlast</span>"</p>
+            <p>"<span class="highlight">As me tante een snor had, was 't me ome</span>"</p>
+            <p>"<span class="highlight">Die is zo dom, die denk dat een garnalenkroket van de Noordzee komt zwemme</span>"</p>
+        </div>
+
+        <div class="message-box">
+            <p><span class="emoji">📧</span> Check je mail: <strong>We hebbe je een bevestiging gestuurd!</strong></p>
+            <p><span class="emoji">💪</span> Beperkte oplage - <span class="highlight">op = echt op!</span></p>
+            <p><span class="emoji">🔥</span> Geen verplichtinge - <strong>je beslist straks zelf!</strong></p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="index.html" class="btn">Terug naar de site</a>
+            <a href="mailto:info@rotterdamshop.com?subject=Vraag over Rotterdams Woordenboek" class="btn btn-secondary">Vraag? Mail ons!</a>
+        </div>
+
+        <div class="footer-note">
+            <p><strong>Nie vergete hè:</strong></p>
+            <p>"Een Rotterdammer die nie kan schelde, is als een molen zonder wind!"</p>
+            <p style="margin-top: 20px;">Tot snel, mattie! 👊</p>
+        </div>
+    </div>
+</body>
+</html>
