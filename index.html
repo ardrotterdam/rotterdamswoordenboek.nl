@@ -154,7 +154,6 @@
         <p>Wil je prate as een echte Rotterdammer? Niet lullen maar poetsen, pak dit boekie!</p>
         <div class="prijs-info">🔥 BEPERKTE OPLAGE - Wees d'r as de kippe bij! 🔥</div>
         <!-- UPDATE CHECK - VERSIE 2.0 - 4 SEPTEMBER 2025 -->
-    
     </header>
     
     <section id="beschrijving">
@@ -173,8 +172,11 @@
         
         <p style="text-align: center; font-weight: bold; color: #008000;">Muil houe en aanmelde - kost je helemaal niks!</p>
         
-        <!-- WERKEND FORMSPREE FORMULIER -->
+        <!-- WERKEND FORMSPREE FORMULIER MET REDIRECT -->
         <form action="https://formspree.io/f/xandljvd" method="POST">
+            <!-- REDIRECT NAAR EIGEN BEDANKPAGINA -->
+            <input type="hidden" name="_next" value="https://ardrotterdam.github.io/rotterdamswoordenboek.nl/bedankt.html">
+            
             <label for="naam">Naam (hoe hiet je dan?):</label>
             <input type="text" id="naam" name="naam" placeholder="Jan de Rotterdammer" required>
             
